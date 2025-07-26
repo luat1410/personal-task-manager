@@ -1,0 +1,53 @@
+.dashboard-header {
+  background: #1890ff;
+  padding: 16px;
+
+  .ant-row {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .ant-col {
+    display: flex;
+    align-items: center;
+  }
+
+  .dashboard-title {
+    color: white;
+    font-size: 24px;
+
+    @media (max-width: 500px) {
+      font-size: 18px;
+      text-align: left;
+    }
+  }
+
+  .ant-btn-text {
+    color: white;
+    padding: 0;
+    margin-left: auto;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #ff4d4f;
+    }
+
+    @media (max-width: 500px) {
+      font-size: 18px;
+    }
+  }
+}
+
+.dashboard-content {
+  padding: 24px 16px;
+}
+
+.dashboard-filters {
+  margin-bottom: 24px;
+  .ant-col {
+    margin-bottom: 8px;
+  }
+  .ant-btn {
+    width: 100%;
+  }
+}
